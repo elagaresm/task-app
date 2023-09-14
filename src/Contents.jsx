@@ -1,7 +1,9 @@
-import Content from './Content'
+import Content from "./Content";
 
 export default function Contents() {
-    return (
-            <Content />
-    )
+  return (
+    <div className="py-12 px-10">
+      <Content />
+    </div>
+  );
 }

@@ -1,10 +1,11 @@
 // import { useEffect } from "react";
 
-export default function Tabs({ tabList, activeTab, setActiveTab, contentList, setActiveContent }) {
-  function handleClick(index) {
-    setActiveTab(tabList[index]);
-    setActiveContent(contentList[index])
+export default function Tabs({ tabList, activeTab, setActiveTab }) {
+  function handleClick(ele) {
+    setActiveTab(ele);
   }
+
+  console.log("running...");
 
   const styles = {
     h3: "bg-[#e4e9fd] text-center py-4 cursor-pointer font-bold",
